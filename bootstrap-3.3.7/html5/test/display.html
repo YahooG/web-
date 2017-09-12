@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>display</title>
+    <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    .one{
+      width: 200px;
+      height: 200px;
+      background: yellow;
+      display:inline-block;
+      /*块级元素在一行显示*/
+    }
+    .inline_ele{
+      width: 500px;
+      height: 100px;
+      background: red;
+      display: inline-block;
+    }
+
+    </style>
+  </head>
+  <body>
+    <!--一行显示display用于改变行元素,块元素的特点
+  行元素默认display的值为inline,普通的行元素是不可以的设置宽高的,设置无效.
+input ,image属于行元素的个例,可以设置宽高
+如果需要对行元素设置宽高,可以把display 设置为inline-block
+    块元素默认display为block
+    如果需要让块元素拥有行员素的特点,可以把display设置为inline或者inline-block -->
+    <div class="one"></div>
+    <div class="one"></div>
+    <p>asflkasdf;lsadf;lksd;lfk;sldkf;sdkf;lsdkf;lsdkf;lsdkdf;lsd;f</p>
+    <span class="inline_ele">爱上了沙发上;联发科;收到了开发;老师的</span>
+    <span>sfdsfhlskfjlksjflksajflsdjflsjflj</span>
+  </body>
+</html>

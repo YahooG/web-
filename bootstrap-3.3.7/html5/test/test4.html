@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>跨行跨列</title>
+    <style>
+      table{
+        /*用于取消表格之间的间隙*/
+        border-collapse: collapse;
+        border: 1px solid gray;
+      }
+      td,th{
+        border: 1px solid gray;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>name</th>
+        <th>age</th>
+        <th colspan="3">num</th>
+      </tr>
+      <tr>
+        <td>lilei</td>
+        <td>17</td>
+        <td colspan="2">123456789</td>
+        <td rowspan="3">海淀区</td>
+      </tr>
+      <tr>
+        <td>hanmeimei</td>
+        <td>female</td>
+        <td colspan="2">78965431</td>
+      </tr>
+      <tr>
+        <td>wang</td>
+        <td>female</td>
+        <td colspan="2">132165464</td>
+      </tr>
+    </table>
+  </body>
+</html>

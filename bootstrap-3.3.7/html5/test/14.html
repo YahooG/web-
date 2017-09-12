@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      *{
+        margin:0;
+        padding:0;
+      }
+      ul li{
+        list-style: none;
+        /*列表的样式为无*/
+
+      }
+      a{
+        text-decoration: none;
+        color: gray;
+
+      }
+      .nav{
+        width:1000px;
+        margin :50px,auto;
+        /*overflow: hidden;*/
+        margin: 0 auto;
+
+        /*height: 30px*/
+
+        /* 浮动的解决
+        1.给父元素设置高度
+        2.添加空元素并且默认指定clear：both
+        3.直接给父元素设置一个overflow的属性*/
+
+      }
+      .nav li{
+        width:80px;
+        height:30px;
+        float :left;
+        line-height: 30px;
+        /*文本在垂直方向居中*/
+        text-align: center;
+        /*文本在水平方向居中*/
+        background: DeepPink;
+
+      }
+      .clearfix::after,.clearfix::before{
+        content: "";
+        height: 0;
+        display: block;
+        visibility: hidden;
+        line-height: 0;
+        clear: both;
+
+      }
+      .clearfix{
+        *zoom:1;
+      }
+      /*4.清除浮动,使用伪元素*/
+    </style>
+  </head>
+  <body>
+    <!-- 父元素没有高度，所有的子元素都浮动，会导致父元素高度为0，下面的元素会补上来那么不占页面位置，就会出现
+  元素重叠 -->
+    <ul class="nav clearfix">
+      <li><a href="">deeppink</a></li>
+      <li><a href="">DeepPink</a></li>
+      <li><a href="">DeepPink</a></li>
+      <li><a href="">DeepPink</a></li>
+      <li><a href="">DeepPink</a></li>
+      <!-- <p style="clear:both"></p> -->
+
+    </ul>
+    <p>asfsdfsdafdsfsfasdfsdfsdfsdfsafasfsdfsdfsde</p>
+  </body>
+</html>

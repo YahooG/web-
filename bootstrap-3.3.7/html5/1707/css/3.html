@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>css优先级</title>
+    <style>
+      .one{
+      color: red;
+      }
+      #oneid{
+
+      }
+      p{
+        /*用于确定最高优先级*/
+        color: yellow;
+      }
+      .two{
+        color: purple;
+      }
+    </style>
+
+  </head>
+  <body>
+    <!-- css的选择器规则,是按照从右往左寻找的 -->
+    <!-- 优先级的计算公式(在元素本身) !important>行内style>id > class>标签 >继承> 浏览器的默认颜色-->
+    <!-- 优先级相同,最后的设置有效 -->
+    <!-- 在同一个css规则中,出现一次标签,优先级加1
+  出现一个class 优先级加10
+出现一次id 加100-->
+    <div class="one" id="oneid">
+      <p>pyuansu</p>
+    </div>
+    <p class="two "id="twoid"></p>
+    <div class="three-a three-b">p的颜色??</div>
+  </body>
+</html>

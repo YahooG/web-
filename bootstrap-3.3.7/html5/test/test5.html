@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      p{
+        font-size: 50px;
+        letter-spacing: 10px;
+        /*调整字符间距 (中文常用)允许使用负值*/
+      }
+      .two{
+        /*单词间的间距,中文无效*/
+        font-size: 30px;
+        word-spacing: 50px;
+      }
+      .three{
+        font-size:30px;
+        /*line-height:  120%*/
+         /*three的行高为36px*/
+        /*line-height: 36px;*/
+        /*line-height: 1.5em;*/
+        /*当前字体的倍数*/
+        /*以上三种方式设置的行高都会让后代继承:继承祖先元素的行高*/
+        line-height: 1.2;
+        /*子元素会继承该因子,而不是继承行高*/
+      }
+      .three p{
+        font-size: 50px
+      }
+      a{
+        text-decoration: none;
+        /* 一般全都去掉.none overline underline line-through*/
+      }
+      .four{
+        text-align: center;
+      }
+      .four img{
+        width:200;
+        height: 200;
+
+        /*适用于行内元素*/
+      }
+      .five.small{
+        vertical-align: middle;
+        /*  适用于行内元素,实现垂直方向位置变化*/
+      }
+      .six{
+        text-indent: 2em;
+        /* 允许为负值,增加关键词更易被爬取*/
+      }
+
+    </style>
+  </head>
+  <body>
+    <p>deeppink</p>
+
+    <p class="two">
+      hello world ni hao
+    </p>
+
+    <div class="three">
+      deeppink <br>
+      文件哈哈大家点击
+      <p>nishisniadknaoidio</p>
+    </div>
+
+    <a href="#">Google</a>
+
+    <div class="four">
+      deeppink <br>
+      <img src="../images/1.jpg" alt="">
+      <img src="../images/1.jpg" alt="">
+      <span>deeppinl</span>
+    </div>
+
+    <p class="five">
+      <img  class="small" src="../images/1.jpg" alt="">
+      <span>deppinkkkkkk</span>
+    </p>
+
+    <p class="six">
+      deepppppsdfslfmls;dmfl;sdmf;lsdmfl;sdmflsdfl;sdmflsd <br>
+      deepppppsdfslfmls;dmfl;sdmf;lsdmfl;sdmflsdfl;sdmflsd <br>
+      deepppppsdfslfmls;dmfl;sdmf;lsdmfl;sdmflsdfl;sdmflsd <br>
+      deepppppsdfslfmls;dmfl;sdmf;lsdmfl;sdmflsdfl;sdmflsd <br>
+    </p>
+
+
+
+  </body>
+</html>

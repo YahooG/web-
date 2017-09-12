@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+h1{
+  color: red;
+}
+/*引入外部样式表*/
+<link rel ="stylesheet",href="">

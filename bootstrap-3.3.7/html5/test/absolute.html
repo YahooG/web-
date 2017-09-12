@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      /*.one{
+        width:500px;
+        height: 100px;
+        background: blue;*/
+        /*此时one除了body之外没有其他祖先元素,此时的绝对定位是相对于body的*/
+        /*position: absolute;
+        top: 100px;
+        left: 10%;*/
+        /*此处的百分比相对于body*/
+      /*}*/
+      /*.f{
+        width: 800px;
+        height: 500px;
+        background: yellow;
+        margin:100px auto;*/
+        /*只要祖先元素中有任何设置过relative,absolute,fix
+        那么子元素根据父元素来相对移动
+        */
+        /*position: relative;*/
+        /* 子绝父相
+        父元素设置相对定位
+        */
+      /*}*/
+
+      .s{
+        width: 500px;
+        height: 300px;
+        background: green;
+        position: absolute;
+        left: 100px;
+        /*此时虽然有父元素,但是f并没有设置过任何定位的属性.所以仍相对body定位.*/
+      }
+      </style>
+  </head>
+  <body>
+    <!-- <div class="one"> </div>
+    <p>asfsadfsadfsdafaWfdweRFWAFsdfsdfsdfsdfsdfsdfsfsdfsdfd</p> -->
+    <!-- <div class="f"> -->
+    <div class="s"></div>
+    <!-- </div> -->
+    <p>发顺丰的水电费水电费水电费水电费水电费的是否</p>
+  </body>
+
+</html>
